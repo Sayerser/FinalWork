@@ -5,9 +5,15 @@
 using namespace std;
 
 int main()
-{
+{//int arr[] - создается массив, d - счетчик первого цикла, min1 - минимальная сумма элементов, max1 - максимальная сумма элементов, s1 - счетчик второго цикла
 	int arr[]{ 1,-2,3,5,6,7,10,11,-4,-12 };
-	int d, min1, s1, max1, pr = 1, inmin1 = 0, inmax1 = 0;
+	int d;
+	int min1;
+	int s1;
+	int max1;
+	int pr = 1;
+	int inmin1 = 0;
+	int inmax1 = 0;
 	min1 = arr[0];
 	max1 = arr[0];
 	for (d = 0; d != 10; d++) {
