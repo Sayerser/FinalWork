@@ -7,27 +7,27 @@ using namespace std;
 int main()
 {
 	int arr[]{ 1,-2,3,5,6,7,10,11,-4,-12 };
-	int i, min, s, max, pr = 1, inmin = 0, inmax = 0;
-	min = arr[0];
-	max = arr[0];
-	for (i = 0; i != 10; i++) {
-		if (arr[i] > max) {
-			max = arr[i];
-			inmax = i;
+	int d, min1, s1, max1, pr = 1, inmin1 = 0, inmax1 = 0;
+	min1 = arr[0];
+	max1 = arr[0];
+	for (d = 0; d != 10; d++) {
+		if (arr[d] > max1) {
+			max1 = arr[d];
+			inmax1 = d;
 		}
-		if (arr[i] < min) {
-			min = arr[i];
-			inmin = i;
-		}
-	}
-	if (inmin > inmax) {
-		for (s = inmax + 1; s != inmin; s++) {
-			pr = arr[s] * pr;
+		if (arr[d] < min1) {
+			min1 = arr[d];
+			inmin1 = d;
 		}
 	}
-	if (inmin < inmax) {
-		for (s = inmin + 1; s != inmax; s++) {
-			pr = arr[s] * pr;
+	if (inmin1 > inmax1) {
+		for (s1 = inmax1 + 1; s1 != inmin1; s1++) {
+			pr = arr[s1] * pr;
+		}
+	}
+	if (inmin1 < inmax1) {
+		for (s1 = inmin1 + 1; s1 != inmax1; s1++) {
+			pr = arr[s1] * pr;
 		}
 	}
 	cout << pr;
